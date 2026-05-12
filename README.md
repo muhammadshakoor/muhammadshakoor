@@ -263,9 +263,10 @@ A collection of repositories documenting my learning journey across data science
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=muhammadshakoor&show_icons=true&theme=default&hide_border=true&count_private=true&cache_seconds=86400" alt="Muhammad Shakoor's GitHub Stats" onerror="this.style.display='none'" />
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=muhammadshakoor&theme=default" alt="Muhammad Shakoor's GitHub Stats" width="100%" />
 
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=muhammadshakoor&layout=compact&theme=default&hide_border=true&cache_seconds=86400" alt="Top Languages" onerror="this.style.display='none'" />
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=muhammadshakoor&theme=default" alt="Top Languages by Repo" />
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=muhammadshakoor&theme=default" alt="Top Languages by Commit" />
 
 <img src="https://streak-stats.demolab.com?user=muhammadshakoor&theme=default&hide_border=true&date_format=M%20j%5B%2C%20Y%5D" alt="GitHub Streak" onerror="this.style.display='none'" />
 
