@@ -19,7 +19,7 @@ I'm a passionate developer based in **Islamabad, Pakistan** with hands-on experi
 
 - 🔭 Currently working as **Associate Full Stack Developer** & **Associate Automation Engineer** at **Blutech Consulting**
 - ⚡ Specialising in **Power Platform**, **React/TypeScript**, **Node.js**, and **process automation**
-- 🏗️ Contributor to **STC Financial Cockpit** — an enterprise telecom forecasting platform for Saudi Telecom Company, Bahrain
+- 🏗️ Contributor to **STC Bahrain P&L Forecasting Tool** — an enterprise finance dashboard for Saudi Telecom Company managing monthly forecasts across Consumer, Business, Wholesale, and stc Pay segments
 - 🌱 Always learning — currently exploring advanced automation patterns and cloud integrations
 - 💬 Ask me about **Power Apps**, **Power Automate**, **React**, **REST APIs**, or **PostgreSQL**
 - 📫 Reach me on [LinkedIn](https://www.linkedin.com/in/muhammad-shakoor-2971a6117/)
@@ -30,6 +30,7 @@ I'm a passionate developer based in **Islamabad, Pakistan** with hands-on experi
 
 ### Frontend
 ![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
+![Redux](https://img.shields.io/badge/Redux-764ABC?style=flat-square&logo=redux&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
@@ -77,22 +78,34 @@ I'm a passionate developer based in **Islamabad, Pakistan** with hands-on experi
 
 ---
 
-### 📊 STC Financial Cockpit — Forecasting Dashboard *(Enterprise · Private)*
+### 📊 STC Bahrain — Profit & Loss Forecasting Tool *(Enterprise · Private)*
 
-> An enterprise-grade revenue forecasting and analytics dashboard built for **STC Bahrain** (Saudi Telecom Company) at **Blutech Consulting**. Provides real-time financial KPIs, revenue driver analysis, and dynamic forecasts across Consumer and Business telecom segments.
+> A web application built for the **finance team at STC Bahrain** (Saudi Telecom Company) to manage and review monthly financial forecasts. The app displays hierarchical Profit & Loss data across four business segments — **Consumer, Business, Wholesale, and stc Pay** — covering Revenue, Cost of Sales, Gross Profit, EBITDA, and more. Built at **Blutech Consulting**.
 
 ![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
+![Redux](https://img.shields.io/badge/Redux-764ABC?style=flat-square&logo=redux&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
 ![SQL Server](https://img.shields.io/badge/SQL_Server-CC2927?style=flat-square&logo=microsoftsqlserver&logoColor=white)
 
-**Highlights:**
-- 📈 Dynamic revenue driver forecasting across 2,000+ telecom datasets
-- 🔐 Active Directory / LDAP authentication integration
-- 📊 Real-time KPI dashboards with drill-down segment analytics
-- 🏗️ Full-stack: React + TypeScript frontend · Node.js API · PySpark pipeline · SQL Server backend
+#### 🖥️ Frontend
+- 📅 12-month calendar view displaying a mix of **historical actuals and future forecasts** side by side
+- 🏢 Hierarchical P&L data drill-down across Consumer, Business, Wholesale, and stc Pay segments
+- ✏️ Finance users can **edit forecast values month by month** and submit changes for approval
+- 🔔 Admins receive notifications, review submissions, and either **approve or return with comments**
+- 🔐 Role-based access control (RBAC) — each user sees and edits only their relevant segment
+- ⚡ Built with **React, Redux, and Tailwind CSS** for a fast, responsive finance-grade UI
 
-> *Repository is private — part of a professional enterprise engagement at STC Bahrain.*
+#### ⚙️ Backend
+- 🗄️ **Node.js + Express** REST API serving structured P&L data to the frontend
+- 🏦 **SQL Server** database on a Windows VM storing actuals, forecasts, and approval workflows
+- 🔐 **Active Directory / LDAP** authentication via a dedicated service account (`svc_fc_dashboard`)
+- 📡 Cross-subnet connectivity between the Edge Node and Windows VM with firewall rule management (port 1433, SMTP)
+- 🔄 Forecast submission and approval state machine: Draft → Submitted → Approved / Returned
+- 📊 Integrates with a **PySpark-based forecasting pipeline** processing 2,000+ revenue driver datasets from the Hive/Kudu data lake
+
+> *Both repositories are private — part of a professional enterprise engagement at STC Bahrain.*
 
 ---
 
